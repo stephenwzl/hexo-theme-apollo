@@ -46,3 +46,9 @@ mixin post(item)
             +postInfo(item)
             .post-content
                 != item.content
+
+mixin reward()   
+    h3.reward-title 如觉得有帮助，不如请喝杯咖啡            
+    .reward
+        img(src=url_for("/alipay.JPG"))
+        img(src=url_for("/wechat.JPG"))
